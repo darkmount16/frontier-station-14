@@ -89,9 +89,6 @@ public sealed class ChatSanitizationManager : IChatSanitizationManager
         { "=']", "chatsan-tearfully-smiles" },
         { "(':", "chatsan-tearfully-smiles" },
         { "[':", "chatsan-tearfully-smiles" },
-        { "('=", "chatsan-tearfully-smiles" },
-        { "['=", "chatsan-tearfully-smiles" },
-        { "['=", "chatsan-tearfully-smiles" },
 		// Corvax-Localization-Start
         { "хд", "chatsan-laughs" },
         { "о-о", "chatsan-wide-eyed" }, // cyrillic о
@@ -125,8 +122,9 @@ public sealed class ChatSanitizationManager : IChatSanitizationManager
         { "кинул плотную", "бьёт себя по лицу" },
         { "кинул потную", "бьёт себя по лицу" },
 		{ "]=)", "chatsan-smiles" },
-		{ "--", "кажется не впечатлённым" }
+		{ "--", "кажется не впечатлённым" },
         // Corvax-Localization-End
+        { "['=", "chatsan-tearfully-smiles" }
     };
 
     [Dependency] private readonly IConfigurationManager _configurationManager = default!;
